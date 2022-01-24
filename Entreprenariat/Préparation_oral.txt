@@ -1,0 +1,37 @@
+Projet viable financièrement : 
+	depenses :
+		publicité
+		composants
+	revenus : 
+		2 offres differentes (au lancement)
+		+ un module optionel (")
+		
+	Point positif : on a une offre qui ne nous coute pas grand chose
+
+Vision :
+Faire du benefice d'ici 2030
+Notre but est que d'ici 2060 70% des bus du grand-est soient équipé de notre solution
+Et qu'en 2080 la moitié des bus français le soient également
+Entre temps nous esperons conquerir la belgique et le luxembourg à 50-70% !
+
+Attentes : 
+Pourquoi on fait cette présentation ? -> avoir un financement de dépard ? se faire connaitre ? Obtenire un accord de partenariat ?
+Eventuellement parler de ce que nous ont apportés ces cours d'E3
+
+
+Cam : 130euros
+
+LED : 15ctm
+Capteur ultrason : 3*13
+
+Kit Raspberry Pi Zero W : 23 euros
+Module Camera V2 : 28 euros
+
+HDMI :  63 euros
+Splitter 4 sorties : 61.5
+
+Ecran : 4*100 euros
+
+Buzzers : 15
+
+Total : 600 euros
