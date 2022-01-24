@@ -1,0 +1,52 @@
+/PROG  AAAJ_L123
+/ATTR
+OWNER		= MNEDITOR;
+COMMENT		= "";
+PROG_SIZE	= 664;
+CREATE		= DATE 20-12-01  TIME 21:10:40;
+MODIFIED	= DATE 20-12-01  TIME 21:15:10;
+FILE_NAME	= AAAJ_L12;
+VERSION		= 0;
+LINE_COUNT	= 27;
+MEMORY_SIZE	= 1076;
+PROTECT		= READ_WRITE;
+TCD:  STACK_SIZE	= 0,
+      TASK_PRIORITY	= 50,
+      TIME_SLICE	= 0,
+      BUSY_LAMP_OFF	= 0,
+      ABORT_REQUEST	= 0,
+      PAUSE_REQUEST	= 0;
+DEFAULT_GROUP	= 1,*,*,*,*;
+CONTROL_CODE	= 00000000 00000000;
+/APPL
+/APPL
+/MN
+   1:  UFRAME_NUM=2 ;
+   2:  UTOOL_NUM=2 ;
+   3:  PR[112]=PR[117]    ;
+   4:  PR[111]=PR[115]    ;
+   5:J PR[110] 50% CNT0    ;
+   6:  FOR R[160]=0 TO 8 ;
+   7:  IF R[160]<>4,JMP LBL[5] ;
+   8:  PR[111]=PR[120]    ;
+   9:  LBL[5] ;
+  10:  IF R[160]<>7,JMP LBL[6] ;
+  11:  PR[111]=PR[121]    ;
+  12:  LBL[6] ;
+  13:  IF R[160]=0,JMP LBL[7] ;
+  14:  PR[111]=PR[111]+PR[114]    ;
+  15:  LBL[7] ;
+  16:J PR[111] 50% CNT0    ;
+  17:J PR[111] 50% CNT0 Offset,PR[113]    ;
+  18:  CALL HAND_CLOSE    ;
+  19:J PR[111] 50% CNT20    ;
+  20:  IF R[160]=0,JMP LBL[1] ;
+  21:  PR[112]=PR[112]+PR[116]    ;
+  22:  LBL[1] ;
+  23:J PR[112] 50% CNT20    ;
+  24:J PR[112] 50% CNT0 Offset,PR[113]    ;
+  25:  CALL HAND_OPEN    ;
+  26:J PR[112] 50% CNT20    ;
+  27:  ENDFOR ;
+/POS
+/END

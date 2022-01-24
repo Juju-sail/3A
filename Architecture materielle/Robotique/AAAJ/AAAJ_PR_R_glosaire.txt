@@ -1,0 +1,95 @@
+Registers and position registers
+
+R[160] = 0 : notre index pour la boucle for
+
+PR[110] : au dessus du point F
+x = 0
+y = -332
+z = 100
+
+w = 180
+p = 0
+r = 0
+
+PR[111] : variable de travail elle sera donc écrasée dès la ligne 4 
+x = 79.5
+y = -286
+z = 40
+
+w = 180
+p = 0
+r = 0
+
+PR[112] : variable de travail elle sera donc écrasée dès la ligne 3 
+x = 0
+y = -92
+z = 40
+
+w = 180
+p = 0
+r = 0
+
+PR[113] : variable de variation de hauteur (pour descendre sur une pièce)   
+x = 0
+y = 0
+z = -40
+
+w = 0
+p = 0
+r = 0
+
+PR[114] : variable de décalage entre chaque piece d'une même rangée   
+x = -53
+y = 0
+z = 0
+
+w = 0
+p = 0
+r = 0
+
+PR[115] : position au dessus du point A   
+x = 79.5
+y = -286
+z = 40
+
+w = 180
+p = 0
+r = 0
+
+PR[116] : variable de variation de hauteur entre chaque piece (sens montant)   
+x = 0
+y = 0
+z = 40
+
+w = 0
+p = 0
+r = 0
+
+PR[117] : position au dessus du point M   
+x = 0
+y = -92
+z = 40
+
+w = 180
+p = 0
+r = 0
+
+PR[120] : position au dessus du point E   
+x = 106
+y = -332
+z = 40
+
+w = 180
+p = 0
+r = 0
+
+PR[121] : position au dessus du point H 
+x = 79.5
+y = -378
+z = 40
+
+w = 180
+p = 0
+r = 0
+
+
