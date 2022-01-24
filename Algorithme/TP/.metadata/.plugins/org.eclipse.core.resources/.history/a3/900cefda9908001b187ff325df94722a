@@ -1,0 +1,4 @@
+
+public interface Graph {
+	public boolean isVoisin(int i, int j);
+}

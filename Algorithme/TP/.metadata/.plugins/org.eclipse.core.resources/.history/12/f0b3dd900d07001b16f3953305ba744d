@@ -1,0 +1,53 @@
+
+public class ArbreBinRech {
+		//Nous allons ecrire des méthodes permettant d'afficher les 4 parcours 
+		//d'arbres binaires de recherche
+		
+	    //Attributs
+		private Comparable cle; 
+	    private ArbreBinRech gauche; 
+	    private ArbreBinRech droit;
+	    //Constructeurs
+	    public ArbreBinRech(Comparable cle, ArbreBinRech gauche, ArbreBinRech droit) {
+	  		super();
+	  		this.cle = cle;
+	  		this.gauche = gauche;
+	  		this.droit = droit;
+	  	}
+		public ArbreBinRech(Comparable cle) {
+			super();
+			this.cle = cle;
+			this.gauche = new ArbreBinRech();
+			this.droit = new ArbreBinRech();
+		}
+		public ArbreBinRech() {
+			super();
+		}
+	    //Gets et sets
+	    public Comparable getCle() {
+	        return cle;
+	    }
+	    public void setCle(Comparable cle) {
+	        this.cle = cle;
+	    }
+	    
+	    public ArbreBinRech getGauche() {
+	        return gauche;
+	    }
+	    public void setGauche(ArbreBinRech gauche) {
+	        this.gauche = gauche;
+	    }
+	    
+	    public ArbreBinRech getDroit() {
+	        return droit;
+	    }
+	    public void setDroit(ArbreBinRech droit) {
+	        this.droit = droit;
+	    }
+	    //To String
+	    @Override
+		public String toString() {
+			return "" + this.cle;
+		}
+	    
+}

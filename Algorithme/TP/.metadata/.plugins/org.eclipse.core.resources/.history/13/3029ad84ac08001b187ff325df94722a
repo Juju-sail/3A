@@ -1,0 +1,90 @@
+
+public class Matrice {
+	//Attributs
+		int[][] mat;
+		
+		//Constructeurs
+		public Matrice(int k) {
+			mat = new int[k][k];
+			for (int i=0; i<k; i++) {
+				for(int j=0; j<k; j++) {
+					mat[i][j] = 0;
+				}
+				//mat[i][0] = (int)(100*Math.random());
+			}
+		}
+		
+		public Matrice(int[][] mat) {
+			super();
+			this.mat = mat;
+		}
+		
+		//toString
+		public String toString() {
+			String toReturn = "[\n";
+			for(int i=0; i<mat.length; i++) {
+				toReturn += "[";
+				for (int j=0; j<mat[0].length-1;j++) {
+					toReturn += mat[i][j] + ",";
+				}
+				toReturn += mat[i][mat[0].length-1];
+				toReturn += "]\n";
+			}
+			return toReturn +"]";
+		}
+		
+		//Méthode somme coef diag
+		//Complexité : O(n)
+		public int SommeCoefDiag() {
+			int somme = 0;
+			for(int i=0; i<this.mat.length; i++) {
+				somme += mat[i][i];
+			}
+			return somme;
+		}
+		//Methode sommme 2 matrices
+		//Complexité : O(n²)
+		public Matrice SommeMatrices(Matrice m) {
+			Matrice somme = new Matrice(m.mat.length);
+			if(this.mat.length==m.mat.length) {
+				for(int i=0; i<m.mat.length; i++) {
+					for(int j=0;j<this.mat.length; j++) {
+						somme.mat[i][j] = m.mat[i][j] + this.mat[i][j];
+					}
+				}
+			}
+			else return new Matrice(0);
+			return somme;
+		}
+		//Méthode somme 2 matrices Bis
+		public static Matrice SommeMatricesBis(Matrice m_1, Matrice m_2) {
+			return m_1.SommeMatrices(m_2);
+		}
+		//Méthode produit de 2 matrices
+		public Matrice ProduitMatrices(Matrice m) {
+			Matrice produit = new Matrice(m.mat.length);
+			if(this.mat.length == m.mat.length) {
+				for(int i=0; i<m.mat.length; i++) {
+					for(int j=0;j<this.mat.length; j++) {
+						produit.mat[i][j] += m.mat[i][j] * this.mat[j][i];
+					}
+				}
+				return produit;
+			}
+			else return new Matrice(0);
+		}
+		//Main
+		public static void main(String[] args) {
+			Matrice m_1 = new Matrice(4);
+			Matrice m_2 = new Matrice(4);
+			Matrice m_3 = new Matrice(2);
+			System.out.println("M1 : " + m_1);
+			System.out.println("Somme diag M1 : " + m_1.SommeCoefDiag());
+			System.out.println("M2 : " + m_2);
+			System.out.println("M3 : " + m_3);
+			System.out.println("M2+M3 : " + m_2.SommeMatrices(m_3));
+			System.out.println("M1+M2 : " + m_1.SommeMatrices(m_2));
+			System.out.println("M1+M2 (bis) : " + SommeMatricesBis(m_1, m_2));
+			System.out.println("M1*M2 : " + m_1.ProduitMatrices(m_2));
+		}
+}

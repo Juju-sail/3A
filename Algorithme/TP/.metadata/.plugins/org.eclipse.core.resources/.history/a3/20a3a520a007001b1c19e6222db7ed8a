@@ -1,0 +1,44 @@
+
+public class ArbreBinRech<T> {
+		//Nous allons ecrire des méthodes permettant d'afficher les 4 parcours 
+		//d'arbres binaires de recherche
+		
+	    //Attributs
+		int K;
+		private T element; 
+	    private ArbreBinRech<T> gauche; 
+	    private ArbreBinRech<T> droit;
+	    
+	    //Constructeurs
+	    //#############
+		//#############
+		//#############
+		
+	    //Gets et sets
+		 public T get(int K) {
+				if(this.K==K) return this.element;
+				else if(K<this.K) return gauche.get(K);
+				else return droit.get(K);
+		}
+		
+	    //To String
+		public String toString() {
+			return "" + this.K;
+		}
+		
+		//Ajout élément
+		public void add(int K, T element) {
+			if(K<this.K) {
+				if(this.gauche!=null) gauche.add(K, element);
+				else this.gauche = new ArbreBinRech<T>(K,element);
+			}
+			else {
+				if(this.droit!=null) droit.add(K, element);
+				else this.droit = new ArbreBinRech<T>(K,element);
+			}
+		}
+	   
+		public static void main(String[] args) {
+			
+		}
+}

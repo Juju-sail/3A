@@ -1,0 +1,22 @@
+
+public class GraphAdj implements Graph{
+	//Attributs
+	Matrice adj;
+	
+	//Constructeur
+	public GraphAdj(Matrice adj) {
+		adj = new Matrice(adj.mat.length);
+	}
+	
+	@Override
+	public boolean isVoisin(int i, int j) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public static void main(String[] args) {
+		Matrice mat = new Matrice(5);
+		Graph myGraph = new GraphAdj(mat);
+		System.out.println(myGraph);
+	}
+}

@@ -1,0 +1,35 @@
+
+public class GraphAdj implements Graph{
+	//Attributs
+	Matrice adj;
+	
+	//Constructeur
+	public GraphAdj(int k) {
+		this.adj = new Matrice(k);
+	}
+	
+	//toString
+	@Override
+	public String toString() {
+		return "GraphAdj " + adj ;
+	}
+	
+	//méthode voisins
+	@Override
+	public boolean isVoisin(int i, int j) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
+	//Méthode distance deux chemins
+	public int distanceSommets(int i, int j) {
+		
+		return 3;
+	}
+	
+	//Main
+	public static void main(String[] args) {
+		Graph myGraph = new GraphAdj(5);
+		System.out.println("myGraph :\n" +myGraph);
+	}
+}

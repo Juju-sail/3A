@@ -1,0 +1,37 @@
+import java.util.ArrayList;
+
+public class Listes<T> { //T pour pouvoir faire des listes de nimporte quel type d'elements
+	//Attributs
+	T element;
+	ArrayList<T> pointeur;
+	//Constructeur
+	public Listes(T element) {
+		this.element=element;
+		this.pointeur = pointeur;
+	}
+	public Listes(T element, ArrayList<T> pointeur) {
+		this.element = element;
+		this.pointeur = pointeur;
+	}
+	//get et sets
+	public T getElement() {
+		return element;
+	}
+	public void setElement(T element) {
+		this.element = element;
+	}
+	//toString
+	
+	
+	
+	//main
+	public static void main(String[] args) {
+		int a = 3;
+		Listes<Integer> maListe = new Listes<Integer>(3);
+		System.out.println(maListe);
+	}
+	
+	
+	
+	
+}

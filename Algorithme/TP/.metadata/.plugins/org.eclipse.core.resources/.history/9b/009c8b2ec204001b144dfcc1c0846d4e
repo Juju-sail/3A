@@ -1,0 +1,19 @@
+import java.util.ArrayList;
+
+public class Listes<T> { //T pour pouvoir faire des listes de nimporte quel type d'elements
+	//Attributs
+	T element;
+	ArrayList<T> pointeur;
+	//Constructeur
+	public Listes() {
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		Listes<Integer> maListe = new Listes<Integer>();
+	}
+	
+	
+	
+}

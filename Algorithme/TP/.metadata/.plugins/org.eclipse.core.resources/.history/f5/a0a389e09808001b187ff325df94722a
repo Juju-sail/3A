@@ -1,0 +1,6 @@
+
+interface Graph {
+	public default boolean isVoisin(int i, int j) {
+		return true;
+	}
+}

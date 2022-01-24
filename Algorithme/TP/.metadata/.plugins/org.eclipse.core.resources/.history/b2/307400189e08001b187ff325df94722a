@@ -1,0 +1,13 @@
+
+public class GraphAdj implements Graph{
+	
+	@Override
+	public boolean isVoisin(int i, int j) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
+	public static void main(String[] args) {
+		Graph myGraph = new GraphAdj();
+	}
+}
