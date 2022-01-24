@@ -1,0 +1,5 @@
+le nombre 0 a été entré 1 fois
+le nombre 2 a été entré 2 fois
+le nombre 3 a été entré 2 fois
+le nombre 6 a été entré 2 fois
+le nombre 10 a été entré 3 fois
